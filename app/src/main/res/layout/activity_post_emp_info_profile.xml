@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".Employer.PostEmpInfoProfile">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="363dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <EditText
+                android:id="@+id/empprofiletitle"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="your profile "
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/default_inactive_item_color"
+                android:textColorHint="@color/default_inactive_item_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/empabout"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Any additionnal informations here..."
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/default_inactive_item_color"
+                android:textColorHint="@color/default_inactive_item_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/empprofiletitle" />
+
+            <EditText
+                android:id="@+id/emplocation"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/default_inactive_item_color"
+                android:textColorHint="@color/default_inactive_item_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/empabout" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/submitempprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customtoast"
+        android:backgroundTint="@color/white"
+        android:text="Submit"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        app:layout_constraintVertical_bias="0.261" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

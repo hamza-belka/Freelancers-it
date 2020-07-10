@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hamzabelkhiria.miniprojectfreelance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoap"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.SendMessage"></activity>
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Messagedetails" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Employer.Myapplications" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Freelancer.DeatailsJob" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Employer.PostEmpInfoProfile" />
+
+        <service
+            android:name="com.hamzabelkhiria.miniprojectfreelance.FcmMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.hb" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Freelancer.Profile.Profilesubmit" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Freelancer.Profile.Registerexperience" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Freelancer.Profile.Registereducation" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Freelancer.DashboardFreelancer" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.Employer.DashboardEmployer" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.RolesChoix" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.DashboardActivity" />
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.RegisterActivity" />
+        <activity
+            android:name="com.hamzabelkhiria.miniprojectfreelance.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hamzabelkhiria.miniprojectfreelance.MainActivity" />
+    </application>
+
+</manifest>

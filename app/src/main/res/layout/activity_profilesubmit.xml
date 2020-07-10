@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".Freelancer.Profile.Profilesubmit">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:text="Step 3 of 3:"
+        android:textColor="@color/default_badge_text_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="363dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="36dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <EditText
+                android:id="@+id/profiletitle"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="your profile "
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/default_inactive_item_color"
+                android:textColorHint="@color/default_inactive_item_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/about"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Any additionnal informations here..."
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/default_inactive_item_color"
+                android:textColorHint="@color/default_inactive_item_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profiletitle" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/default_inactive_item_color"
+                android:textColorHint="@color/default_inactive_item_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customtoast"
+        android:backgroundTint="@color/white"
+        android:text="Submit"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.261" />
+</androidx.constraintlayout.widget.ConstraintLayout>

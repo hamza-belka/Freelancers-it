@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singleedlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/default_badge_text_color"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="348dp">
+
+        <EditText
+            android:id="@+id/expcompany"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="degree"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#66242222"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/exptitle"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="school"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#66242222"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expcompany" />
+
+        <EditText
+            android:id="@+id/enddate"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="end date"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/default_inactive_item_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startdate"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <EditText
+            android:id="@+id/startdate"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="start date"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/default_inactive_item_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exptitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

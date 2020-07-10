@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employer.DashboardEmployer"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/gradientbackground">
+
+    <include
+        android:id="@+id/emptoolbar"
+        layout="@layout/toolbar">
+
+
+    </include>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.hamzabelkhiria.miniprojectfreelance.BlankFragment"
+        android:layout_width="410dp"
+        android:layout_height="528dp"
+        app:layout_constraintBottom_toTopOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emptoolbar" />
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="bottom"
+        app:active_item_color="@color/colorAccent"
+        app:centre_button_color="@color/colorPrimaryDark"
+        app:centre_button_icon="@drawable/ic_home"
+        app:inactive_item_color="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:space_background_color="@color/white"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_icon_size="@dimen/space_item_icon_default_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="283dp"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="265dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:padding="20dp" />
+
+
+    </com.luseen.spacenavigation.SpaceNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

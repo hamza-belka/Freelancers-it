@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00252323"
+    android:fillViewport="true"
+    tools:context=".Employer.ProfileEmployer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbackground">
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                tools:ignore="UselessParent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="1dp"
+                    android:src="@drawable/hb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="282dp"
+                        android:layout_height="306dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginTop="85dp"
+                        app:cardBackgroundColor="#ffffffff"
+                        app:cardCornerRadius="10dp"
+                        app:contentPaddingBottom="15dp"
+                        app:contentPaddingLeft="15dp"
+                        app:contentPaddingRight="15dp"
+                        app:contentPaddingTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nomprenom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="60dp"
+                                android:text="Hamza Belkhiria"
+                                android:textColor="@color/black"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/profiletitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="Full stack devlopper"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="Tuinisie , Ariena "
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="137dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:foregroundGravity="center"
+                                android:paddingTop="12dp"
+                                app:srcCompat="@drawable/gold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

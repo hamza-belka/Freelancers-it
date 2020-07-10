@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView2"
+            android:layout_width="38dp"
+            android:layout_height="21dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            android:src="@drawable/compq"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/exptitle"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/default_inactive_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toEndOf="@+id/circleImageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/expcompany"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toEndOf="@+id/circleImageView2"
+            app:layout_constraintTop_toTopOf="@id/exptitle" />
+
+        <TextView
+            android:id="@+id/expdatedf"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toEndOf="@+id/circleImageView2"
+            app:layout_constraintTop_toBottomOf="@id/expcompany"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

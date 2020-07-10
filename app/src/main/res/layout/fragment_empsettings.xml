@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00252323"
+    android:fillViewport="true"
+    tools:context=".Employer.PostJobFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbackground"
+
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            app:cardBackgroundColor="#ffffffff"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingRight="15dp"
+            app:contentPaddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="94dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fixed Price"
+                        android:textColorHint="@color/default_inactive_item_color"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hourly"
+                        android:textColorHint="@color/default_inactive_item_color"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="158dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="28dp"
+                    android:text="type of project"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="#ffffffff"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingRight="15dp"
+            app:contentPaddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="It's free to post a project "
+                    android:textColor="#2196F3"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            app:cardBackgroundColor="#ffffffff"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingRight="15dp"
+            app:contentPaddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="64dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Title"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/jobtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="What do you need done?"
+                    android:inputType="textPersonName"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorHint="@color/default_shape_inactive_color"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="0dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            app:cardBackgroundColor="#ffffffff"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingRight="15dp"
+            app:contentPaddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="114dp">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="146dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Decription"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/jobdesc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Go into details ..."
+                    android:inputType="textMultiLine"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorHint="@color/default_inactive_item_color"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    android:textColor="@color/black"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardv12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            app:cardBackgroundColor="#ffffffff"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingRight="15dp"
+            app:contentPaddingTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card7">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/jobsalary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Salary"
+                    android:inputType="textMultiLine"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorHint="@color/default_inactive_item_color"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.421"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="146dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Budget"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardv15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            app:cardBackgroundColor="#ffffffff"
+            app:cardCornerRadius="10dp"
+            app:contentPaddingBottom="15dp"
+            app:contentPaddingLeft="15dp"
+            app:contentPaddingRight="15dp"
+            app:contentPaddingTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardv12"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/jobskills"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Skills"
+                    android:inputType="textMultiLine"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorHint="@color/default_inactive_item_color"
+                    android:textColorLink="@color/default_inactive_item_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="278dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Skills for Project"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btnpostproject"
+                    android:layout_width="314dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Post Project"
+                    android:textColor="#FDFCFC"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jobskills" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
